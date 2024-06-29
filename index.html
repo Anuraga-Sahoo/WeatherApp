@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="1st">
+    <img src="./img/main-bg.png" alt="">
+    <h3>Allow your location to Start this app</h3>
+    <button id="button">Allow</button>
+  </div>
+
+
+
+  <!--  -->
+  <div class="display-none" id="c_display">
+  <div class="container-2">
+    <div class="main-container">
+      <div class="left-container">
+        <div class="header">
+          <div>
+          <h1 class="city" id="city">Cuttack</h1>
+          <h1 class="country" id="country">us</h1>
+          </div>
+        </div>
+        <div class="footer">
+          <div>
+          <h1 class="time" id="clock">15:20:10</h1>
+          <h2 class="date" id="dateString">26-6-2024</h2>
+        </div>
+        <div class="current-temperature-div">
+          <h1 class="current-temperature" id="c-l-temp">23C</h1>
+        </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="weatheer-img-box">
+          <img class="weather-img" src="./img/main-bg.png" alt="" id="weather-image">
+          <h3 class="weather-details" id="current-location-weather">cloudey 26°C</h3>
+          <div class="line"></div>
+        </div>
+        <div class="details-box">
+          <div class="search-box">
+            <input type="search" name="" id="search" placeholder="Enter a City Name">
+            <button id="s-btn"><img class="search-icon" src="./img/search.png" alt=""></button>           
+          </div>
+          <div class="location">
+            <!-- <p class="s-location">City Location</p> -->
+            <p id="location-data"></p>
+          </div>
+          <div class="item-1">
+            <p id="temperature">Temperature</p>
+            <p id="temperature-data">25°C</p>
+          </div>
+          <div class="item-1">
+            <p id="wind-speed">Wind Speed</p>
+            <p id="wind-speed-data">3 Km/h</p>
+          </div>
+          <div class="item-1">
+            <p id="humidity">Humidity</p>
+            <p id="humidity-data">38%</p>
+          </div>
+          <div class="item-1">
+            <p id="visibility">Visibility</p>
+            <p id="visibility-data">3000 ml</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

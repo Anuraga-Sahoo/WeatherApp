@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: antiquewhite;
+}
+.container{
+  background-color: rgb(35, 35, 69);
+  height: 30rem;
+  width: 30%;
+  margin-top: 6rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  margin:  0 0 20px 0;
+}
+h3{
+  margin: 0 0 20px 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+  height: 3rem;
+  width: 6rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(94, 94, 126);
+  color: aliceblue;
+  cursor: pointer;
+}
+button:hover{
+  background-color:rgb(82, 82, 164) ;
+}

@@ -94,6 +94,7 @@ setInterval(function(){
     try{
       const responce = await fetch (`${ApiURLSearch}${searchCity}&appid=${APIKey}`)
       const result = await responce.json();
+      console.log(result);
 
           let APIcity = `${result.name}`;
           let APICountry = result.sys.country
@@ -135,6 +136,9 @@ function getCurrentLocValue(APIcity, APICountry, APICurrentTemp, APIWeatherDescr
 // showImage function
 
 function showImage(APIWeather){
-    if(APIWeather.toLowerCase() === "rain")  weatherImage.src = "./img/rain.png"
-    else if(APIWeather.toLowerCase() === "cloud" ) weatherImage.src ="./img/cloud.png"
+    if(APIWeather.toLowerCase() === "rain")  weatherImage.src = "./img/r.png"
+    else if(APIWeather.toLowerCase() === "cloud" ) weatherImage.src = "./img/cloud.png"
+    else if(APIWeather.toLowerCase() === "haze") weatherImage.src = "./img/haze.png"
+    else if(APIWeather.toLowerCase() === "clear") weatherImage.src = "./img/sun.png"
+    else if(APIWeather.toLowerCase() === "snow") weatherImage.src ="./img/snowflake.png"
 }
